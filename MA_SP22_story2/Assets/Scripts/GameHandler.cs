@@ -48,7 +48,7 @@ public class GameHandler : MonoBehaviour
 
     public void RestartGame()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Menu_Sceen");
     }
 
     public void QuitGame()
