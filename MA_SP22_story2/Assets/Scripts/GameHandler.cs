@@ -90,7 +90,7 @@ public class GameHandler : MonoBehaviour{
 
     public void RestartGame()
     {
-        SceneManager.LoadScene("Menu_Sceen");
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void QuitGame()
