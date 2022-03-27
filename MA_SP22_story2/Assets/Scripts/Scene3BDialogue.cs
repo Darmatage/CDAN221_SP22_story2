@@ -63,7 +63,7 @@ public void talking(){         // main story function. Players hit next to progr
        else if (primeInt ==3){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Butler";
+                Char2name.text = "Butgler";
                 Char2speech.text = "Shall I explain your objective now that you're settled?";
                 //gameHandler.AddPlayerStat(1);
         }

@@ -53,61 +53,93 @@ public void talking(){         // main story function. Players hit next to progr
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-               ArtChar2.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Butler";
-                Char2speech.text = "Welcome milorde, I've been awaiting your arrival.";
+                Char1speech.text = "You enter the hall, long and lined with extravagant decor.";
+                Char2name.text = "";
+                Char2speech.text = "";
         }
        else if (primeInt ==3){
                 Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Butler";
-                Char2speech.text = "Shall I explain your objective now that you're settled?";
-                //gameHandler.AddPlayerStat(1);
+                Char1speech.text = "As you make slow strides down the seemingly empty hallway...";
+                Char2name.text = "";
+                Char2speech.text = "";
+            
         }
-       else if (primeInt == 4){
+        else if (primeInt == 4)
+        {
+            Char1name.text = "";
+            Char1speech.text = " you suppose it’d be a waste to simply pass by all these doors.";
+            Char2name.text = "";
+            Char2speech.text = "";
+
+        }
+        else if (primeInt == 5)
+        {
+            Char1name.text = "";
+            Char1speech.text = "Noone is around anyway so there shouldn’t be trouble...";
+            Char2name.text = "";
+            Char2speech.text = "";
+
+        }
+        else if (primeInt == 6)
+        {
+            Char1name.text = "";
+            Char1speech.text = "it’ll only be a second..";
+            Char2name.text = "";
+            Char2speech.text = "";
+
+        }
+        else if (primeInt == 7)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            //gameHandler.AddPlayerStat(1);
+        }
+        else if (primeInt == 8){
                 ArtChar1.SetActive(true);
-                Char1name.text = "Hunter";
+            ArtChar2.SetActive(true);
+            Char1name.text = "Hunter";
                 Char1speech.text = "I was provided a briefing before I came, but freshen my memory?";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt == 5){
+       else if (primeInt == 9){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "You";
                 Char2speech.text = "Hit me? Why?";
                 //gameHandler.AddPlayerStat(1);
         }
-       else if (primeInt == 6){
+       else if (primeInt == 10){
                 Char1name.text = "Jeda";
                 Char1speech.text = "I am searching for a fugitive. Ragu Fahn.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt ==7){
+       else if (primeInt ==11){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "You";
                 Char2speech.text = "Why do you think I know anything?";
         }
 
-        else if (primeInt ==8){
+        else if (primeInt ==12){
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "You";
                  Char2speech.text = "Why do you think I know anything?";
          }
-         else if (primeInt ==9){
+         else if (primeInt ==13){
                   Char1name.text = "";
                   Char1speech.text = "";
                   Char2name.text = "You";
                   Char2speech.text = "Why do you think I know anything?";
           }
 
-       else if (primeInt == 10){
+       else if (primeInt == 14){
                 Char1name.text = "Jeda";
                 Char1speech.text = "Do not play the stupid. You will take me to him.";
                 Char2name.text = "";
@@ -178,9 +210,9 @@ public void talking(){         // main story function. Players hit next to progr
         }
 
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene2a");
+               SceneManager.LoadScene("Scene3a");
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("Scene2b");
+                SceneManager.LoadScene("Scene3b");
         }
 }
