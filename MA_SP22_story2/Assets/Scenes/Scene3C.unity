@@ -405,7 +405,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: BALLROOM
+  m_Text: FIGHT
 --- !u!222 &341718883
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -902,7 +902,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b5e76d8a3f95b4a169f393109230661b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b181a6a2405a1408287df47987f136f2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1375,15 +1375,15 @@ RectTransform:
   m_GameObject: {fileID: 1162674574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1292915844}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1280, y: 720}
+  m_AnchoredPosition: {x: 356, y: -0.23121}
+  m_SizeDelta: {x: 500, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1162674576
 MonoBehaviour:
@@ -1405,7 +1405,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2e736f8a75dd8432984542eb0b5851e6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1588749a7674d4b3686d50568be8f574, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1742,14 +1742,14 @@ RectTransform:
   m_GameObject: {fileID: 1358004727}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1292915844}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -390, y: 0.23121}
   m_SizeDelta: {x: 1280, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1358004729
@@ -1772,7 +1772,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2e736f8a75dd8432984542eb0b5851e6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 37d58fa4ebb1c418093014cd9c8e6da8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2095,7 +2095,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: HALL
+  m_Text: CIVIL
 --- !u!222 &1807838619
 CanvasRenderer:
   m_ObjectHideFlags: 0
