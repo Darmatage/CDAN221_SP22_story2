@@ -21,22 +21,28 @@ public class Scene3BDialogue : MonoBehaviour {
         public GameObject Choice1b;
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
+        public GameObject NextScene3Button;
         public GameObject nextButton;
        //public GameHandler gameHandler;
        //public AudioSource audioSource;
         private bool allowSpace = true;
 
 void Start(){         // initial visibility settings
-        DialogueDisplay.SetActive(false);
-        ArtChar1.SetActive(false);
-        ArtChar2.SetActive(false);
+        DialogueDisplay.SetActive(true);
+        ArtChar1.SetActive(true);
+        ArtChar2.SetActive(true);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
+        NextScene3Button.SetActive(false);
         nextButton.SetActive(true);
-   }
+        Char1name.text = "";
+        Char1speech.text = "I straighten my back, not wanting to be talked down by this stranger";
+        Char2name.text = "";
+        Char2speech.text = "";
+    }
 
 void Update(){         // use spacebar as Next button
         if (allowSpace == true){
@@ -54,64 +60,99 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 2){
                ArtChar2.SetActive(true);
+                ArtChar1.SetActive(true);
                 DialogueDisplay.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Butler";
-                Char2speech.text = "Welcome milorde, I've been awaiting your arrival.";
+                Char1name.text = "Hunter";
+                Char1speech.text = "Why are you back here then?";
+                Char2name.text = "";
+                Char2speech.text = "";
         }
        else if (primeInt ==3){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Butgler";
-                Char2speech.text = "Shall I explain your objective now that you're settled?";
+                Char2name.text = "???";
+                Char2speech.text = "I don't see why the questioning has turned onto me, but it you must...";
                 //gameHandler.AddPlayerStat(1);
         }
-       else if (primeInt == 4){
-                ArtChar1.SetActive(true);
-                Char1name.text = "Hunter";
-                Char1speech.text = "I was provided a briefing before I came, but freshen my memory?";
-                Char2name.text = "";
-                Char2speech.text = "";
+       else if (primeInt == 4){              
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "???";
+                Char2speech.text = "I am the host's plus one, in a way, their oldest friend.";
         }
        else if (primeInt == 5){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Hit me? Why?";
+                Char2name.text = "???";
+                Char2speech.text = "I am here to assure no one enters their quarters.";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 6){
-                Char1name.text = "Jeda";
-                Char1speech.text = "I am searching for a fugitive. Ragu Fahn.";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Damien";
+                Char2speech.text = "For formalities sake, you may call me Damiien.";
         }
        else if (primeInt ==7){
                 Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Why do you think I know anything?";
+                Char1speech.text = "He watches you expectantly, waiting for a name.";
+                Char2name.text = "";
+                Char2speech.text = "";
         }
 
         else if (primeInt ==8){
                  Char1name.text = "";
-                 Char1speech.text = "";
-                 Char2name.text = "You";
-                 Char2speech.text = "Why do you think I know anything?";
+                 Char1speech.text = "I clear my throat, avoiding the topic.";
+                 Char2name.text = "";
+                 Char2speech.text = "";
          }
          else if (primeInt ==9){
-                  Char1name.text = "";
-                  Char1speech.text = "";
-                  Char2name.text = "You";
-                  Char2speech.text = "Why do you think I know anything?";
+                  Char1name.text = "Hunter";
+                  Char1speech.text = "Right, I was wondering where this host might be.";
+                  Char2name.text = "";
+                  Char2speech.text = "";
           }
+        else if (primeInt == 10)
+        {
+            Char1name.text = "Hunter";
+            Char1speech.text = "Haven't gotten the opportunity to properly meet them.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 11)
+        {
+            Char1name.text = "Hunter";
+            Char1speech.text = "I assume they're in that room then?";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 12)
+        {
+            Char1name.text = "";
+            Char1speech.text = "He watches, waits, and smiles ever so slightly nodding";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 13)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Damien";
+            Char2speech.text = "Of course.";
+        }
+        else if (primeInt == 14)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Damien";
+            Char2speech.text = "I would bring you to them but unfortunately they are busy.";
+        }
 
-       else if (primeInt == 10){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Do not play the stupid. You will take me to him.";
-                Char2name.text = "";
-                Char2speech.text = "";
+        else if (primeInt == 15){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Damien";
+                Char2speech.text = "Would you like me to send them your regards?";
                 // Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -121,44 +162,52 @@ public void talking(){         // main story function. Players hit next to progr
 
         // ENCOUNTER AFTER CHOICE #1
        else if (primeInt == 100){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Then you are no use to me, and must be silenced.";
+                Char1name.text = "";
+                Char1speech.text = "I’m growing suspicious of this man, but can’t do too much to help this…";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt == 101){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Come back here! Do not think you can hide from me!";
+        else if (primeInt == 101)
+        {
+            Char1name.text = "Hunter";
+            Char1speech.text = "Yes, actually.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 102){
+                Char1name.text = "";
+                Char1speech.text = "I open my mouth as if to say something...";
                 Char2name.text = "";
                 Char2speech.text = "";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene1Button.SetActive(true);
+                NextScene2Button.SetActive(true);
         }
 
        else if (primeInt == 200){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Do not think you can fool me, human. Where will we find him?";
+                Char1name.text = "Hunter";
+                Char1speech.text = "No, thats alright. I’ll have to catch up with them later";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 201){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
+                Char2name.text = "Damien";
+                Char2speech.text = "Carry on then. Enjoy yourself.";
                 nextButton.SetActive(false);
                 allowSpace = false;
-                NextScene2Button.SetActive(true);
+                NextScene3Button.SetActive(true);
         }
      }
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
         public void Choice1aFunct(){
                 Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "I don't know what you're talking about!";
+                Char1speech.text = "I accept, however...";
+                Char2name.text = "";
+                Char2speech.text = "";
                 primeInt = 99;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
@@ -167,9 +216,9 @@ public void talking(){         // main story function. Players hit next to progr
         }
         public void Choice1bFunct(){
                 Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Sure, anything you want... just lay off the club.";
+                Char1speech.text = "I decide it wouldn't be worth it";
+                Char2name.text = "";
+                Char2speech.text = "";
                 primeInt = 199;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
@@ -178,9 +227,12 @@ public void talking(){         // main story function. Players hit next to progr
         }
 
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene2a");
+               SceneManager.LoadScene("Scene3c");
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("Scene2b");
+                SceneManager.LoadScene("Scene3d");
+        }
+        public void SceneChange3(){
+                SceneManager.LoadScene("Scene1b");
         }
 }
