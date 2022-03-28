@@ -1171,7 +1171,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Right ball goer :)
+  m_Text: You found the demon :)
 --- !u!222 &1835037930
 CanvasRenderer:
   m_ObjectHideFlags: 0

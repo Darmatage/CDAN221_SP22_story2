@@ -963,7 +963,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Wrong ball goer :(
+  m_Text: The demon was never found
 --- !u!222 &1835037930
 CanvasRenderer:
   m_ObjectHideFlags: 0
