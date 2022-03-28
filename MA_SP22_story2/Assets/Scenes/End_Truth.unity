@@ -1135,8 +1135,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 156}
-  m_SizeDelta: {x: 600, y: 160}
+  m_AnchoredPosition: {x: 0, y: 128.19972}
+  m_SizeDelta: {x: 600, y: 221.6006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1835037929
 MonoBehaviour:
@@ -1171,7 +1171,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Looks like you were too trusting. :(
+  m_Text: "As you tell this stranger your secrets, your mind goes blank, and vision
+    goes dark.\n  Looks like you were too trusting. \n"
 --- !u!222 &1835037930
 CanvasRenderer:
   m_ObjectHideFlags: 0
