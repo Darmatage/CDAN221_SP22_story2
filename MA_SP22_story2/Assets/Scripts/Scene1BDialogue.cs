@@ -62,7 +62,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Butler";
-                Char2speech.text = "Milorde, Why have tou returned so soon?";
+                Char2speech.text = "Milorde, Why have you returned so soon?";
         }
        else if (primeInt == 3){
                 Char1name.text = "";
