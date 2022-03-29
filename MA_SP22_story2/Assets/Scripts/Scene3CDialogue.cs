@@ -36,7 +36,11 @@ void Start(){         // initial visibility settings
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
-   }
+        Char1name.text = "";
+        Char1speech.text = "";
+        Char2name.text = "";
+        Char2speech.text = "";
+    }
 
 void Update(){         // use spacebar as Next button
         if (allowSpace == true){

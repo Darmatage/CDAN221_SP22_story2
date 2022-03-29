@@ -52,6 +52,8 @@ public void talking(){         // main story function. Players hit next to progr
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
+            GameHandler.beenToBall = true;
+            Debug.Log("beenToBall= " + GameHandler.beenToBall);
                 DialogueDisplay.SetActive(true);
                 ArtChar1.SetActive(true);
                 ArtChar2.SetActive(true);

@@ -38,7 +38,7 @@ void Start(){         // initial visibility settings
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         NextScene3Button.SetActive(false);
-        NextScene4Button.SetActive(false);
+        NextScene4Button.SetActive(false);      
         nextButton.SetActive(true);
    }
 
@@ -59,6 +59,9 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 2)
         {
+            GameHandler.beenToHallway = true;
+            Debug.Log("beenToHallway= " + GameHandler.beenToHallway);
+
             DialogueDisplay.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "You enter the hall, long and lined with extravagant decor.";
@@ -186,7 +189,7 @@ public void talking(){         // main story function. Players hit next to progr
             nextButton.SetActive(false);
             allowSpace = false;
             NextScene1Button.SetActive(true);
-            NextScene2Button.SetActive(true);
+            //NextScene2Button.SetActive(true);
         }
 
 
@@ -213,8 +216,18 @@ public void talking(){         // main story function. Players hit next to progr
             Char2speech.text = "";
             nextButton.SetActive(false);
             allowSpace = false;
-            NextScene3Button.SetActive(true);
-            NextScene4Button.SetActive(true);
+
+            if (GameHandler.beenToBall == false)
+            {
+                NextScene2Button.SetActive(true);
+                NextScene3Button.SetActive(true);
+            }
+
+            else
+            {
+                NextScene4Button.SetActive(true);
+            }
+
         }
 
     }
@@ -243,18 +256,23 @@ public void talking(){         // main story function. Players hit next to progr
                 allowSpace = true;
         }
 
-        public void SceneChange1(){
+        public void SceneChange3a(){
                SceneManager.LoadScene("Scene3a");
         }
-        public void SceneChange2(){
-                SceneManager.LoadScene("Scene3b");
-        }
-        public void SceneChange3()
+
+    //If has been to ball=false, show scene change 2 and scene change 1a. Otherwise show scene 4.
+
+
+        public void SceneChange2()
         {
         SceneManager.LoadScene("Scene2");
         }
-        public void SceneChange4()
+        public void SceneChange1a()
         {
         SceneManager.LoadScene("Scene1a");
+        }
+        public void SceneChange4()
+        {
+        SceneManager.LoadScene("Scene4");
         }
 }

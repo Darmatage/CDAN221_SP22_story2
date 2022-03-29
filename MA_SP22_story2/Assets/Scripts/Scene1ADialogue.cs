@@ -160,6 +160,6 @@ public void talking(){         // main story function. Players hit next to progr
                    SceneManager.LoadScene("Scene2");
             }
             public void SceneChange2(){
-                    SceneManager.LoadScene("Scene3");
+                    SceneManager.LoadScene("Scene3a");
             }
     }

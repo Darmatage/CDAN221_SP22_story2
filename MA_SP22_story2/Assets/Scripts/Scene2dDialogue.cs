@@ -258,7 +258,16 @@ public void talking(){         // main story function. Players hit next to progr
                     Char2speech.text = "It's not like I did much, anyways...";
                     nextButton.SetActive(false);
                     allowSpace = false;
-                    NextScene1Button.SetActive(true);
+
+            if (GameHandler.beenToHallway == false)
+            {
+                NextScene1Button.SetActive(true);
+            }
+            else {
+                NextScene2Button.SetActive(true);
+            }
+
+
             }
            else if (primeInt == 37){
                     Char1name.text = "";
@@ -267,8 +276,17 @@ public void talking(){         // main story function. Players hit next to progr
                     Char2speech.text = "";
                     nextButton.SetActive(false);
                     allowSpace = false;
-                    NextScene2Button.SetActive(true);
+
+            if (GameHandler.beenToHallway == false)
+            {
+                NextScene1Button.SetActive(true);
             }
+            else
+            {
+                NextScene2Button.SetActive(true);
+            }
+
+        }
          }
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
             public void Choice1aFunct(){
@@ -298,6 +316,6 @@ public void talking(){         // main story function. Players hit next to progr
                    SceneManager.LoadScene("Scene3");
             }
             public void SceneChange2(){
-                    SceneManager.LoadScene("Scene3");
+                    SceneManager.LoadScene("Scene3A");
             }
     }

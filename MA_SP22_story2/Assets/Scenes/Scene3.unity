@@ -933,7 +933,7 @@ GameObject:
   - component: {fileID: 863455067}
   - component: {fileID: 863455066}
   m_Layer: 5
-  m_Name: ButtonChange2
+  m_Name: ButtonChange4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -952,7 +952,7 @@ RectTransform:
   m_Children:
   - {fileID: 1807838617}
   m_Father: {fileID: 1292915844}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1005,7 +1005,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1292915845}
         m_TargetAssemblyTypeName: Scene3Dialogue, Assembly-CSharp
-        m_MethodName: SceneChange2
+        m_MethodName: SceneChange4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1300,7 +1300,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1292915845}
         m_TargetAssemblyTypeName: Scene3Dialogue, Assembly-CSharp
-        m_MethodName: SceneChange1
+        m_MethodName: SceneChange3a
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1418,7 +1418,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Right
+  m_Text: Right to Ball
 --- !u!222 &1157350316
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1758,9 +1758,9 @@ RectTransform:
   - {fileID: 185141932}
   - {fileID: 410948929}
   - {fileID: 1069912407}
-  - {fileID: 863455065}
   - {fileID: 1581312687}
   - {fileID: 1516301228}
+  - {fileID: 863455065}
   - {fileID: 7416645492860424470}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1794,9 +1794,9 @@ MonoBehaviour:
   Choice1a: {fileID: 185141931}
   Choice1b: {fileID: 410948928}
   NextScene1Button: {fileID: 1069912406}
-  NextScene2Button: {fileID: 863455064}
-  NextScene3Button: {fileID: 1581312686}
-  NextScene4Button: {fileID: 1516301227}
+  NextScene2Button: {fileID: 1581312686}
+  NextScene3Button: {fileID: 1516301227}
+  NextScene4Button: {fileID: 863455064}
   nextButton: {fileID: 1969027376}
 --- !u!1 &1358004727
 GameObject:
@@ -1963,7 +1963,7 @@ GameObject:
   - component: {fileID: 1516301230}
   - component: {fileID: 1516301229}
   m_Layer: 5
-  m_Name: ButtonChange4
+  m_Name: ButtonChange3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1982,7 +1982,7 @@ RectTransform:
   m_Children:
   - {fileID: 1862435468}
   m_Father: {fileID: 1292915844}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2035,7 +2035,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1292915845}
         m_TargetAssemblyTypeName: Scene3Dialogue, Assembly-CSharp
-        m_MethodName: SceneChange4
+        m_MethodName: SceneChange1a
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2175,7 +2175,7 @@ GameObject:
   - component: {fileID: 1581312689}
   - component: {fileID: 1581312688}
   m_Layer: 5
-  m_Name: ButtonChange3
+  m_Name: ButtonChange2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2194,7 +2194,7 @@ RectTransform:
   m_Children:
   - {fileID: 1157350314}
   m_Father: {fileID: 1292915844}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2247,7 +2247,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1292915845}
         m_TargetAssemblyTypeName: Scene3Dialogue, Assembly-CSharp
-        m_MethodName: SceneChange3
+        m_MethodName: SceneChange2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2444,7 +2444,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Question Him
+  m_Text: Go to Garden
 --- !u!222 &1807838619
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2523,7 +2523,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Left
+  m_Text: Left to Garden
 --- !u!222 &1862435470
 CanvasRenderer:
   m_ObjectHideFlags: 0

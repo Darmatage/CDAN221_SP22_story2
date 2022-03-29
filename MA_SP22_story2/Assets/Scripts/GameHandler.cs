@@ -7,7 +7,8 @@ using UnityEngine.Audio;
 
 public class GameHandler : MonoBehaviour{
 
-    public static int playerStat;
+    public static bool beenToBall = false;
+    public static bool beenToHallway = false;
     //public GameObject textGameObject;
     public static bool GameisPaused = false;
     public GameObject pauseMenuUI;
@@ -62,16 +63,16 @@ public class GameHandler : MonoBehaviour{
                    volumeLevel = sliderValue;
     }
 
-    public void UpdatePlayerStat(int amount)
-    {
-        playerStat += amount;
-        Debug.Log("Current Player Stat = " + playerStat);
+    //public void UpdatePlayerStat(int amount)
+    //{
+        //playerStat += amount;
+        //Debug.Log("Current Player Stat = " + playerStat);
         //      UpdateScore ();
-    }
+    //}
 
-    public int CheckPlayerStat()
+    public bool CheckPlayerStat()
     {
-        return playerStat;
+        return beenToBall;
     }
 
     //void UpdateScore () {
