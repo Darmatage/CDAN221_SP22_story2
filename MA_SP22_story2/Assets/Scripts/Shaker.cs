@@ -5,7 +5,7 @@ using UnityEngine;
 public class Shaker : MonoBehaviour
 {
 
-    public float shakeAmount = 2f;
+    public float shakeAmount = 0f;
     private Vector3 initialPosition;
 
     void Start()

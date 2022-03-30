@@ -118,6 +118,7 @@ public void talking(){         // main story function. Players hit next to progr
         else if (primeInt == 101)
         {
             ArtChar1.SetActive(true);
+            Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(2f);
             Char1name.text = "Hunter";
             Char1speech.text = "AHHH!!";
             Char2name.text = "";
@@ -134,6 +135,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 103)
         {
+            Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(0f);
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(true);
             Char1name.text = "";
