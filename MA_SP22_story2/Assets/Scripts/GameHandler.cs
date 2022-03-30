@@ -9,6 +9,7 @@ public class GameHandler : MonoBehaviour{
 
     public static bool beenToBall = false;
     public static bool beenToHallway = false;
+    public static bool beenToGarden = false;
     //public GameObject textGameObject;
     public static bool GameisPaused = false;
     public GameObject pauseMenuUI;

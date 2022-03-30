@@ -53,7 +53,9 @@ public void talking(){         // main story function. Players hit next to progr
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-               ArtChar2.SetActive(true);
+            GameHandler.beenToGarden = true;
+            Debug.Log("beenToGarden= " + GameHandler.beenToGarden);
+            ArtChar2.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -178,9 +180,9 @@ public void talking(){         // main story function. Players hit next to progr
         }
 
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene2a");
+               SceneManager.LoadScene("Scene3A");
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("Scene2b");
+                SceneManager.LoadScene("Scene3A");
         }
 }

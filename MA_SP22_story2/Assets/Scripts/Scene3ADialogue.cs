@@ -22,6 +22,8 @@ public class Scene3ADialogue : MonoBehaviour {
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject NextScene3Button;
+        public GameObject NextScene4Button;
+        public GameObject NextScene5Button;
         public GameObject nextButton;
        //public GameHandler gameHandler;
        //public AudioSource audioSource;
@@ -37,6 +39,8 @@ void Start(){         // initial visibility settings
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         NextScene3Button.SetActive(false);
+        NextScene4Button.SetActive(false);
+        NextScene5Button.SetActive(false);
         nextButton.SetActive(true);
         Char1name.text = "";
         Char1speech.text = "You fumble for an excuse";
@@ -80,6 +84,7 @@ public void talking(){         // main story function. Players hit next to progr
             allowSpace = false;
             Choice1a.SetActive(true); // function Choice1aFunct()
             Choice1b.SetActive(true); // function Choice1bFunct()
+
         }
        
 
@@ -93,7 +98,16 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "Right, well. Come with me then.";
                 nextButton.SetActive(false);
                 allowSpace = false;
+
+            if (GameHandler.beenToBall == false)
+            {
                 NextScene1Button.SetActive(true);
+            }
+
+            else
+            {
+                NextScene5Button.SetActive(true);
+            }
         }
 
        else if (primeInt == 200){
@@ -130,8 +144,16 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "You can feel his patience growing thin.";
                 nextButton.SetActive(false);
                 allowSpace = false;
+             if (GameHandler.beenToGarden == false)
+            {
                 NextScene2Button.SetActive(true);
                 NextScene3Button.SetActive(true);
+            }
+
+            else
+            {
+                NextScene4Button.SetActive(true);
+            }
         }
      }
 
@@ -167,7 +189,15 @@ public void talking(){         // main story function. Players hit next to progr
         }
     
         public void SceneChange3(){
-                SceneManager.LoadScene("Scene1B");
+                SceneManager.LoadScene("Scene3C");
+        }
+        public void SceneChange4()
+        {
+        SceneManager.LoadScene("Scene3D");
+        }
+        public void SceneChange5()
+        {
+        SceneManager.LoadScene("Scene4");
         }
 
 }
