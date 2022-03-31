@@ -481,6 +481,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 6248202149972401791, guid: c42aef6a2e712f3409c8f2417b8c247c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6594395313028315815, guid: c42aef6a2e712f3409c8f2417b8c247c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -499,23 +503,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7167536396595615151, guid: c42aef6a2e712f3409c8f2417b8c247c, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7167536396595615151, guid: c42aef6a2e712f3409c8f2417b8c247c, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7726975444528167948, guid: c42aef6a2e712f3409c8f2417b8c247c, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7726975444528167948, guid: c42aef6a2e712f3409c8f2417b8c247c, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7726975444528167948, guid: c42aef6a2e712f3409c8f2417b8c247c, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7787640825669016174, guid: c42aef6a2e712f3409c8f2417b8c247c, type: 3}
       propertyPath: m_Pivot.x
@@ -724,7 +728,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -16, y: 229}
-  m_SizeDelta: {x: 600, y: 150}
+  m_SizeDelta: {x: 1000, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1096207267
 MonoBehaviour:
@@ -759,7 +763,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MENU SCREEN
+  m_Text: BALLROOM BANTER
 --- !u!222 &1096207268
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -917,7 +921,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Body text
+  m_Text: Demon at Large
 --- !u!222 &1390704312
 CanvasRenderer:
   m_ObjectHideFlags: 0
