@@ -16,7 +16,9 @@ public class Scene3CDialogue : MonoBehaviour {
         public GameObject DialogueDisplay;
         public GameObject ArtChar1;
         public GameObject ArtChar2;
-        public GameObject ArtBG1;
+    public GameObject ArtChar2Stern;
+    public GameObject ArtChar2Angry;
+    public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject NextScene1Button;
@@ -30,6 +32,8 @@ void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
         ArtChar1.SetActive(false);
         ArtChar2.SetActive(false);
+        ArtChar2Angry.SetActive(false);
+        ArtChar2Stern.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -69,7 +73,9 @@ public void talking(){         // main story function. Players hit next to progr
         else if (primeInt == 3)
         {
             ArtChar1.SetActive(true);
-            ArtChar2.SetActive(true);
+            ArtChar2.SetActive(false);
+            ArtChar2Angry.SetActive(true);
+            ArtChar2Stern.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Man";
@@ -100,6 +106,9 @@ public void talking(){         // main story function. Players hit next to progr
 
         else if (primeInt == 7)
         {
+            ArtChar2.SetActive(false);
+            ArtChar2Angry.SetActive(false);
+            ArtChar2Stern.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Man";

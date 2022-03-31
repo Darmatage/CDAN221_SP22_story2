@@ -16,6 +16,8 @@ public class Scene4ADialogue : MonoBehaviour {
         public GameObject DialogueDisplay;
         public GameObject ArtChar1;
         public GameObject ArtChar2;
+        public GameObject ArtChar2Angry;
+        public GameObject ArtChar2Happy;
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -29,7 +31,9 @@ public class Scene4ADialogue : MonoBehaviour {
 void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(true);
         ArtChar1.SetActive(true);
-        ArtChar2.SetActive(true);
+        ArtChar2.SetActive(false);
+        ArtChar2Angry.SetActive(false);
+        ArtChar2Happy.SetActive(true);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -60,8 +64,10 @@ public void talking(){         // main story function. Players hit next to progr
             GameHandler.beenToGarden = true;
             Debug.Log("beenToGarden= " + GameHandler.beenToGarden);
             ArtChar1.SetActive(true);
-            ArtChar2.SetActive(true);
-                DialogueDisplay.SetActive(true);
+            ArtChar2Happy.SetActive(true);
+            ArtChar2.SetActive(false);
+            ArtChar2Angry.SetActive(false);
+            DialogueDisplay.SetActive(true);
                 Char1name.text = "Hunter";
                 Char1speech.text = "Deal, but don’t mess it up";
                 Char2name.text = "";

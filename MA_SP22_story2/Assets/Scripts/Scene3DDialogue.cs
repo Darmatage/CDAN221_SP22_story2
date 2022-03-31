@@ -16,7 +16,9 @@ public class Scene3DDialogue : MonoBehaviour {
         public GameObject DialogueDisplay;
         public GameObject ArtChar1;
         public GameObject ArtChar2;
-        public GameObject ArtBG1;
+    public GameObject ArtChar2Stern;
+    public GameObject ArtChar2Angry;
+    public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject NextScene1Button;
@@ -30,6 +32,8 @@ void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
         ArtChar1.SetActive(false);
         ArtChar2.SetActive(false);
+        ArtChar2Angry.SetActive(false);
+        ArtChar2Stern.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -69,8 +73,10 @@ public void talking(){         // main story function. Players hit next to progr
         }
        else if (primeInt == 4){
                 ArtChar1.SetActive(true);
-                ArtChar2.SetActive(true);
-                Char1name.text = "";
+            ArtChar2.SetActive(false);
+            ArtChar2Angry.SetActive(true);
+            ArtChar2Stern.SetActive(false);
+            Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Man";
                 Char2speech.text = "Halt. No tresspassing.";
@@ -96,7 +102,10 @@ public void talking(){         // main story function. Players hit next to progr
         }
 
         else if (primeInt ==8){
-                 Char1name.text = "";
+            ArtChar2.SetActive(false);
+            ArtChar2Angry.SetActive(false);
+            ArtChar2Stern.SetActive(true);
+            Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "Man";
                  Char2speech.text = "I'm going to have to ask you to--";
@@ -109,8 +118,10 @@ public void talking(){         // main story function. Players hit next to progr
           }
 
        else if (primeInt == 10){
-                ArtChar2.SetActive(false);
-                Char1name.text = "";
+            ArtChar2.SetActive(false);
+            ArtChar2Angry.SetActive(true);
+            ArtChar2Stern.SetActive(false);
+            Char1name.text = "";
                 Char1speech.text = "He gives you a glance before running to see what the problem is.";
                 Char2name.text = "";
                 Char2speech.text = "";

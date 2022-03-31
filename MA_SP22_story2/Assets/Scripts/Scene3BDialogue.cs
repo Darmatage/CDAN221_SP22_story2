@@ -16,7 +16,9 @@ public class Scene3BDialogue : MonoBehaviour {
         public GameObject DialogueDisplay;
         public GameObject ArtChar1;
         public GameObject ArtChar2;
-        public GameObject ArtBG1;
+    public GameObject ArtChar2Stern;
+    public GameObject ArtChar2Angry;
+    public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject NextScene1Button;
@@ -31,6 +33,8 @@ void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(true);
         ArtChar1.SetActive(true);
         ArtChar2.SetActive(true);
+        ArtChar2Angry.SetActive(false);
+        ArtChar2Stern.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);

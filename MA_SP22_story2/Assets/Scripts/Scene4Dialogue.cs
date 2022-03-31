@@ -16,6 +16,8 @@ public class Scene4Dialogue : MonoBehaviour {
         public GameObject DialogueDisplay;
         public GameObject ArtChar1;
         public GameObject ArtChar2;
+        public GameObject ArtChar2Angry;
+        public GameObject ArtChar2Happy;
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -30,6 +32,8 @@ void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
         ArtChar1.SetActive(false);
         ArtChar2.SetActive(false);
+        ArtChar2Angry.SetActive(false);
+        ArtChar2Happy.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -75,7 +79,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
         }
        else if (primeInt == 5){
-                ArtChar2.SetActive(true);
+                ArtChar2Angry.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "???";
@@ -144,6 +148,8 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 15)
         {
+            ArtChar2.SetActive(true);
+            ArtChar2Angry.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Drunkard";
@@ -158,6 +164,8 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 17)
         {
+            ArtChar2Angry.SetActive(true);
+            ArtChar2.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Drunkard";
@@ -206,6 +214,8 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 102)
         {
+            ArtChar2Angry.SetActive(false);
+            ArtChar2.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Drunkard";
@@ -318,6 +328,9 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 118)
         {
+            ArtChar2Happy.SetActive(true);
+            ArtChar2.SetActive(false);
+            ArtChar2Angry.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Drunkard";
@@ -478,6 +491,9 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 218)
         {
+            ArtChar2Happy.SetActive(true);
+            ArtChar2.SetActive(false);
+            ArtChar2Angry.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Drunkard";
