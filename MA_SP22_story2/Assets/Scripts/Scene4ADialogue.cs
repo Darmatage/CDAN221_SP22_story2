@@ -27,16 +27,20 @@ public class Scene4ADialogue : MonoBehaviour {
         private bool allowSpace = true;
 
 void Start(){         // initial visibility settings
-        DialogueDisplay.SetActive(false);
-        ArtChar1.SetActive(false);
-        ArtChar2.SetActive(false);
+        DialogueDisplay.SetActive(true);
+        ArtChar1.SetActive(true);
+        ArtChar2.SetActive(true);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
-   }
+        Char1name.text = "";
+        Char1speech.text = "Despite the fact that he is far too drunk, you do need the distraction.";
+        Char2name.text = "";
+        Char2speech.text = "";
+    }
 
 void Update(){         // use spacebar as Next button
         if (allowSpace == true){
@@ -55,70 +59,38 @@ public void talking(){         // main story function. Players hit next to progr
         else if (primeInt == 2){
             GameHandler.beenToGarden = true;
             Debug.Log("beenToGarden= " + GameHandler.beenToGarden);
+            ArtChar1.SetActive(true);
             ArtChar2.SetActive(true);
                 DialogueDisplay.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Butler";
-                Char2speech.text = "Welcome milorde, I've been awaiting your arrival.";
+                Char1name.text = "Hunter";
+                Char1speech.text = "Deal, but don’t mess it up";
+                Char2name.text = "";
+                Char2speech.text = "";
         }
        else if (primeInt ==3){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Butler";
-                Char2speech.text = "Shall I explain your objective now that you're settled?";
+                Char2name.text = "Drunkard";
+                Char2speech.text = "Ooooh trus’ me I know what ‘m doin’";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
-                ArtChar1.SetActive(true);
-                Char1name.text = "Hunter";
-                Char1speech.text = "I was provided a briefing before I came, but freshen my memory?";
+                
+                Char1name.text = "";
+                Char1speech.text = "He stumbles off inside, giving you a glance as he leaves the garden.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 5){
                 Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Hit me? Why?";
+                Char1speech.text = "Now’s your chance.";
+                Char2name.text = "";
+                Char2speech.text = "";
                 //gameHandler.AddPlayerStat(1);
-        }
-       else if (primeInt == 6){
-                Char1name.text = "Jeda";
-                Char1speech.text = "I am searching for a fugitive. Ragu Fahn.";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt ==7){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Why do you think I know anything?";
-        }
-
-        else if (primeInt ==8){
-                 Char1name.text = "";
-                 Char1speech.text = "";
-                 Char2name.text = "You";
-                 Char2speech.text = "Why do you think I know anything?";
-         }
-         else if (primeInt ==9){
-                  Char1name.text = "";
-                  Char1speech.text = "";
-                  Char2name.text = "You";
-                  Char2speech.text = "Why do you think I know anything?";
-          }
-
-       else if (primeInt == 10){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Do not play the stupid. You will take me to him.";
-                Char2name.text = "";
-                Char2speech.text = "";
-                // Turn off "Next" button, turn on "Choice" buttons
+        
                 nextButton.SetActive(false);
                 allowSpace = false;
-                Choice1a.SetActive(true); // function Choice1aFunct()
-                Choice1b.SetActive(true); // function Choice1bFunct()
+                NextScene2Button.SetActive(true);
         }
 
         // ENCOUNTER AFTER CHOICE #1
@@ -180,9 +152,9 @@ public void talking(){         // main story function. Players hit next to progr
         }
 
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene3B");
+               SceneManager.LoadScene("Scene3D");
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("Scene3B");
+                SceneManager.LoadScene("Scene3D");
         }
 }

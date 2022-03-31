@@ -77,8 +77,8 @@ public void talking(){         // main story function. Players hit next to progr
             ArtChar2.SetActive(true);
             Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "???";
-                Char2speech.text = "indeed you did, do you need assistance finding the correct one?";
+                Char2name.text = "Man";
+                Char2speech.text = "Indeed you did, do you need assistance finding the correct one?";
             // Turn off "Next" button, turn on "Choice" buttons
             nextButton.SetActive(false);
             allowSpace = false;
@@ -94,7 +94,7 @@ public void talking(){         // main story function. Players hit next to progr
        else if (primeInt == 100){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "???";
+                Char2name.text = "Man";
                 Char2speech.text = "Right, well. Come with me then.";
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -120,7 +120,7 @@ public void talking(){         // main story function. Players hit next to progr
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "???";
+            Char2name.text = "Man";
             Char2speech.text = "Are you toying with me? ";
         }
         else if (primeInt == 202)
@@ -134,7 +134,7 @@ public void talking(){         // main story function. Players hit next to progr
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "???";
+            Char2name.text = "Man";
             Char2speech.text = "state your true intentions then, guest.";
         }
         else if (primeInt == 204){
@@ -189,11 +189,11 @@ public void talking(){         // main story function. Players hit next to progr
         }
     
         public void SceneChange3(){
-                SceneManager.LoadScene("Scene3C");
+                SceneManager.LoadScene("Scene3E");
         }
         public void SceneChange4()
         {
-        SceneManager.LoadScene("Scene3D");
+        SceneManager.LoadScene("Scene3C");
         }
         public void SceneChange5()
         {

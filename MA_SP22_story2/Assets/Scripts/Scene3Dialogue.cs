@@ -23,6 +23,7 @@ public class Scene3Dialogue : MonoBehaviour {
         public GameObject NextScene2Button;
         public GameObject NextScene3Button;
         public GameObject NextScene4Button;
+        public GameObject NextScene5Button;
         public GameObject nextButton;
        //public GameHandler gameHandler;
        //public AudioSource audioSource;
@@ -38,7 +39,8 @@ void Start(){         // initial visibility settings
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         NextScene3Button.SetActive(false);
-        NextScene4Button.SetActive(false);      
+        NextScene4Button.SetActive(false);
+        NextScene5Button.SetActive(false);
         nextButton.SetActive(true);
    }
 
@@ -64,14 +66,14 @@ public void talking(){         // main story function. Players hit next to progr
 
             DialogueDisplay.SetActive(true);
             Char1name.text = "";
-            Char1speech.text = "You enter the hall, long and lined with extravagant decor.";
+            Char1speech.text = "I enter the hall, long and lined with extravagant decor.";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 3)
         {
             Char1name.text = "";
-            Char1speech.text = "As you make slow strides down the seemingly empty hallway...";
+            Char1speech.text = "As I'm making slow strides down the seemingly empty hallway...";
             Char2name.text = "";
             Char2speech.text = "";
 
@@ -79,7 +81,7 @@ public void talking(){         // main story function. Players hit next to progr
         else if (primeInt == 4)
         {
             Char1name.text = "";
-            Char1speech.text = "you suppose it’d be a waste to simply pass by all these doors.";
+            Char1speech.text = "Perhaps it’d be a waste to simply pass by all these doors.";
             Char2name.text = "";
             Char2speech.text = "";
 
@@ -95,7 +97,7 @@ public void talking(){         // main story function. Players hit next to progr
         else if (primeInt == 6)
         {
             Char1name.text = "";
-            Char1speech.text = "it’ll only be a second..";
+            Char1speech.text = "It’ll only be a second..";
             Char2name.text = "";
             Char2speech.text = "";
             // Turn off "Next" button, turn on "Choice" buttons
@@ -167,7 +169,7 @@ public void talking(){         // main story function. Players hit next to progr
             ArtChar2.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "???";
+            Char2name.text = "Man";
             Char2speech.text = "If I may ask, why are you wandering around these parts.";
         }
         else if (primeInt == 107)
@@ -176,7 +178,7 @@ public void talking(){         // main story function. Players hit next to progr
             ArtChar2.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "???";
+            Char2name.text = "Man";
             Char2speech.text = "You do know they're off limits,yes?";
         }
 
@@ -185,13 +187,21 @@ public void talking(){         // main story function. Players hit next to progr
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(true);
             Char1name.text = "";
-            Char1speech.text = "You gather your composure...";
+            Char1speech.text = "You try and gather your composure...";
             Char2name.text = "";
             Char2speech.text = "";
             nextButton.SetActive(false);
             allowSpace = false;
-            NextScene1Button.SetActive(true);
-            //NextScene2Button.SetActive(true);
+            if (GameHandler.beenToGarden == false)
+            {
+                NextScene1Button.SetActive(true);
+            }
+
+            else
+            {
+                NextScene5Button.SetActive(true);
+            }
+           
         }
 
 
@@ -265,6 +275,10 @@ public void talking(){         // main story function. Players hit next to progr
     //If has been to ball=false, show scene change 2 and scene change 1a. Otherwise show scene 4.
 
 
+    public void SceneChange5()
+        {
+        SceneManager.LoadScene("Scene3D");
+        }
         public void SceneChange2()
         {
         SceneManager.LoadScene("Scene2");
@@ -277,4 +291,6 @@ public void talking(){         // main story function. Players hit next to progr
         {
         SceneManager.LoadScene("Scene4");
         }
+
+        
 }
