@@ -16,7 +16,9 @@ public class Scene1Dialogue : MonoBehaviour {
         public GameObject DialogueDisplay;
         public GameObject ArtChar1;
         public GameObject ArtChar2;
+        public GameObject ArtChar2Concern;
         public GameObject ArtBG1;
+        public GameObject ArtBG2;
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject NextScene1Button;
@@ -29,7 +31,9 @@ public class Scene1Dialogue : MonoBehaviour {
 void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
         ArtChar1.SetActive(false);
+        ArtChar2Concern.SetActive(false);
         ArtBG1.SetActive(true);
+        ArtBG2.SetActive(false);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         NextScene1Button.SetActive(false);
@@ -73,6 +77,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "Of course milorde.";
         }
        else if (primeInt == 5){
+                ArtChar2.SetActive(false);
+                ArtChar2Concern.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Butler";
@@ -103,6 +109,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
         }
        else if (primeInt == 10){
+                ArtChar2Concern.SetActive(false);
+                ArtChar2.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Butler";
@@ -121,6 +129,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "All 150 guests passed away that night, and there were no leads for quite some time.";
         }
        else if (primeInt == 13){
+                ArtChar2.SetActive(false);
+                ArtChar2Concern.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Butler";
@@ -145,6 +155,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
         }
        else if (primeInt == 17){
+                ArtChar2Concern.SetActive(false);
+                ArtChar2.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Butler";
@@ -166,9 +178,12 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Butler";
-                Char2speech.text = "It is said there are several guests who might have information regarding the host, see if you can talk to some of the guests.";
+                Char2speech.text = "It is said there are several guests who might have information regarding the host, see if you can find them.";
         }
        else if (primeInt == 21){
+                ArtChar2.SetActive(false);
+                ArtBG1.SetActive(false);
+                ArtBG2.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "As I finish up my conversation with the butler he steps off to the side and opens the door for me.";
                 Char2name.text = "";

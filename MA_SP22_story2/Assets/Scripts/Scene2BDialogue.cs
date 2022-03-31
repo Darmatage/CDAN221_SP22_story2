@@ -16,6 +16,11 @@ public class Scene2BDialogue : MonoBehaviour {
         public GameObject DialogueDisplay;
         public GameObject ArtChar1;
         public GameObject ArtChar2;
+        public GameObject ArtChar2Blush;
+        public GameObject ArtChar2BlushD;
+        public GameObject ArtChar2Blank;
+        public GameObject ArtChar2SmileD;
+        public GameObject ArtChar2Angry;
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -30,6 +35,11 @@ void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
         ArtChar1.SetActive(true);
         ArtChar2.SetActive(true);
+        ArtChar2Blush.SetActive(false);
+        ArtChar2BlushD.SetActive(false);
+        ArtChar2Blank.SetActive(false);
+        ArtChar2SmileD.SetActive(false);
+        ArtChar2Angry.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -60,7 +70,6 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
         }
        else if (primeInt == 3){
-              ArtChar1.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Girl in Red";
@@ -85,6 +94,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
         }
        else if (primeInt == 7){
+                ArtChar2.SetActive(false);
+                ArtChar2Blush.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Girl in Red";
@@ -97,6 +108,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
         }
        else if (primeInt == 9){
+                ArtChar2Blush.SetActive(false);
+                ArtChar2Blank.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Girl in Red";
@@ -121,6 +134,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
         }
        else if (primeInt == 13){
+                ArtChar2Blank.SetActive(false);
+                ArtChar2Blush.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Girl in Red";
@@ -139,6 +154,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "promising you life in exchange for --";
         }
        else if (primeInt == 16){
+                ArtChar2Blush.SetActive(false);
+                ArtChar2Blank.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Girl in Red";
@@ -163,6 +180,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "Haha, yeah. I'm never sure when or if the illness will come back,";
         }
        else if (primeInt == 20){
+                ArtChar2Blank.SetActive(false);
+                ArtChar2.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Girl in Red";
@@ -175,6 +194,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
         }
        else if (primeInt == 22){
+                ArtChar2.SetActive(false);
+                ArtChar2Blank.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "The girl in red's demeanor shifts.";
                 Char2name.text = "";
@@ -187,6 +208,8 @@ public void talking(){         // main story function. Players hit next to progr
                  Char2speech.text = "";
          }
        else if (primeInt == 24){
+                ArtChar2Blank.SetActive(false);
+                ArtChar2Blush.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Girl in Red";
@@ -199,6 +222,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
         }
        else if (primeInt == 26){
+                ArtChar2Blush.SetActive(false);
+                ArtChar2Blank.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Girl in Red";
@@ -218,6 +243,8 @@ public void talking(){         // main story function. Players hit next to progr
                  Char2speech.text = "";
          }
         else if (primeInt == 29){
+                 ArtChar2Blank.SetActive(false);
+                 ArtChar2BlushD.SetActive(true);
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "Girl in Red";

@@ -11,11 +11,14 @@ public class Scene2Dialogue : MonoBehaviour {
         public Text Char1speech;
         public Text Char2name;
         public Text Char2speech;
-       //public Text Char3name;
-       //public Text Char3speech;
         public GameObject DialogueDisplay;
         public GameObject ArtChar1;
         public GameObject ArtChar2;
+        public GameObject ArtChar2Blush;
+        public GameObject ArtChar2BlushD;
+        public GameObject ArtChar2Blank;
+        public GameObject ArtChar2SmileD;
+        public GameObject ArtChar2Angry;
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -30,6 +33,11 @@ void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
         ArtChar1.SetActive(false);
         ArtChar2.SetActive(false);
+        ArtChar2Blush.SetActive(false);
+        ArtChar2BlushD.SetActive(false);
+        ArtChar2Blank.SetActive(false);
+        ArtChar2SmileD.SetActive(false);
+        ArtChar2Angry.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -91,12 +99,16 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
         }
         else if (primeInt == 8){
+                ArtChar2.SetActive(false);
+                ArtChar2Blank.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "All of a sudden our gazes meet.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 9){
+                ArtChar2Blank.SetActive(false);
+                ArtChar2Blush.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "I chanced them a look and the three turned away,";
                 Char2name.text = "";
@@ -120,6 +132,8 @@ public void talking(){         // main story function. Players hit next to progr
         }
         // ENCOUNTER AFTER CHOICE #1
            else if (primeInt == 13){
+                    ArtChar2.SetActive(false);
+                    ArtChar2Blank.SetActive(true);
                     Char1name.text = "";
                     Char1speech.text = "As I drew closer, the middle woman's eyes shot open.";
                     Char2name.text = "";
@@ -141,7 +155,7 @@ public void talking(){         // main story function. Players hit next to progr
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
             public void Choice1aFunct(){
                 Char1name.text = "";
-                Char1speech.text = "I slowly make my way across the ballroom until I stand in front of the three women.";
+                Char1speech.text = "I slowly make my way across the ballroom.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 12;

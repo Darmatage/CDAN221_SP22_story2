@@ -16,6 +16,11 @@ public class Scene2CDialogue : MonoBehaviour {
         public GameObject DialogueDisplay;
         public GameObject ArtChar1;
         public GameObject ArtChar2;
+        public GameObject ArtChar2Blush;
+        public GameObject ArtChar2BlushD;
+        public GameObject ArtChar2Blank;
+        public GameObject ArtChar2SmileD;
+        public GameObject ArtChar2Angry;
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -29,7 +34,12 @@ public class Scene2CDialogue : MonoBehaviour {
 void Start(){         // initial visibility settings
         DialogueDisplay.SetActive(false);
         ArtChar1.SetActive(true);
-        ArtChar2.SetActive(true);
+        ArtChar2.SetActive(false);
+        ArtChar2Blush.SetActive(false);
+        ArtChar2BlushD.SetActive(true);
+        ArtChar2Blank.SetActive(false);
+        ArtChar2SmileD.SetActive(false);
+        ArtChar2Angry.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -54,12 +64,16 @@ public void talking(){         // main story function. Players hit next to progr
         }
         else if (primeInt == 2){
                 DialogueDisplay.SetActive(true);
+                ArtChar2BlushD.SetActive(false);
+                ArtChar2Blank.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "The girl in red stares down at my hand for a while.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 3){
+                ArtChar2Blank.SetActive(false);
+                ArtChar2SmileD.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "Suddenly her face contorts into a devilish grin";
                 Char2name.text = "";
@@ -72,6 +86,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "Pfft, no way! Did you think I was talking about you?";
         }
        else if (primeInt == 5){
+                ArtChar2SmileD.SetActive(false);
+                ArtChar2BlushD.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Girl in Red";
@@ -102,6 +118,8 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "";
         }
        else if (primeInt == 10){
+                ArtChar2BlushD.SetActive(false);
+                ArtChar2SmileD.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Girl in Red";
@@ -115,7 +133,7 @@ public void talking(){         // main story function. Players hit next to progr
         }
        else if (primeInt == 12){
                 ArtChar1.SetActive(false);
-                ArtChar2.SetActive(false);
+                ArtChar2SmileD.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "I ignored the protests of the girl, and began walking off";
                 Char2name.text = "";
