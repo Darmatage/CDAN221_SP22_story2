@@ -87,7 +87,7 @@ public void talking(){         // main story function. Players hit next to progr
                 ArtChar1.SetActive(true);
                 ArtChar2.SetActive(true);
                 Char1name.text = "";
-                Char1speech.text = "The figure turns to face me, looking as though they expected my arrival.";
+                Char1speech.text = "The figure turns to face me, as though they expected my arrival.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 //gameHandler.AddPlayerStat(1);

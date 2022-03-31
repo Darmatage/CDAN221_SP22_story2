@@ -233,19 +233,19 @@ public void talking(){         // main story function. Players hit next to progr
         }
 
         // ENCOUNTER AFTER CHOICE #1
-       else if (primeInt == 30){
+       else if (primeInt == 29){
                 Char1name.text = "";
                 Char1speech.text = "But nothing happens.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-        else if (primeInt == 31){
+        else if (primeInt == 30){
              Char1name.text = "";
              Char1speech.text = "Until I'm snapped into reality by a rumbling noise";
              Char2name.text = "";
              Char2speech.text = "";
          }
-         else if (primeInt == 32){
+         else if (primeInt == 31){
               ArtBG2.SetActive(false);
               ArtSplash1.SetActive(true);
               Char1name.text = "";
@@ -253,19 +253,19 @@ public void talking(){         // main story function. Players hit next to progr
               Char2name.text = "";
               Char2speech.text = "";
           }
-          else if (primeInt == 33){
+          else if (primeInt == 32){
                Char1name.text = "Hunter";
                Char1speech.text = "You lied to me!";
                Char2name.text = "";
                Char2speech.text = "";
            }
-           else if (primeInt == 34){
+           else if (primeInt == 33){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Accomplice";
                 Char2speech.text = "Naturally. Now why don't you all just settle down";
             }
-            else if (primeInt == 35){
+            else if (primeInt == 34){
                  Char1name.text = "";
                  Char1speech.text = "";
                  Char2name.text = "Accomplice";
