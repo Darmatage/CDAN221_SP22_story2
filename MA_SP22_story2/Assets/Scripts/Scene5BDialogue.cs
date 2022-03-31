@@ -143,7 +143,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Accomplice";
-                Char2speech.text = "However, I can say is that it's someone you spoke to tonight.";
+                Char2speech.text = "However, what I can say is that it's someone you spoke to tonight.";
             }
         else if (primeInt == 15){
                 Char1name.text = "Hunter";

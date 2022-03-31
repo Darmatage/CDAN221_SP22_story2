@@ -202,7 +202,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "???";
-                Char2speech.text = "No need to, I am very much confident in the saftey of my guests.";
+                Char2speech.text = "No need, I am very much confident in the saftey of my guests.";
             }
         else if (primeInt == 23){
                 Char1name.text = "Hunter";
