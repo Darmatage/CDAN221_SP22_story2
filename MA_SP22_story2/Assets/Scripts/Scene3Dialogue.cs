@@ -137,7 +137,7 @@ public void talking(){         // main story function. Players hit next to progr
         {
             Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(0f);
             ArtChar1.SetActive(true);
-            ArtChar2.SetActive(true);
+            ArtChar2.SetActive(true); 
             Char1name.text = "";
             Char1speech.text = "Before you stands a tall, handsome man with a gold plated mask.";
             Char2name.text = "";
