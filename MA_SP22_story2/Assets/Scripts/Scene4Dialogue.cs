@@ -53,65 +53,136 @@ public void talking(){         // main story function. Players hit next to progr
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-               ArtChar2.SetActive(true);
+                ArtChar1.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Butler";
-                Char2speech.text = "Welcome milorde, I've been awaiting your arrival.";
+                Char1speech.text = "I enter the garden, scoping around the area.";
+                Char2name.text = "";
+                Char2speech.text = "";
         }
        else if (primeInt ==3){
                 Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Butler";
-                Char2speech.text = "Shall I explain your objective now that you're settled?";
+                Char1speech.text = "At first glance there doesn’t seem to be much of interest…";
+                Char2name.text = "";
+                Char2speech.text = "";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
-                ArtChar1.SetActive(true);
-                Char1name.text = "Hunter";
-                Char1speech.text = "I was provided a briefing before I came, but freshen my memory?";
+               
+                Char1name.text = "";
+                Char1speech.text = "Until a bush close by the fountain starts grumbling…";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 5){
+                ArtChar2.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Hit me? Why?";
+                Char2name.text = "???";
+                Char2speech.text = "Sh- wher did th thin go, m’ thirsty dammit";
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 6){
-                Char1name.text = "Jeda";
-                Char1speech.text = "I am searching for a fugitive. Ragu Fahn.";
+                Char1name.text = "";
+                Char1speech.text = "A short, messy man fumbles out from the bush.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt ==7){
                 Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "You";
-                Char2speech.text = "Why do you think I know anything?";
+                Char1speech.text = "He dusts himself off haphazardly before noticing your presence";
+                Char2name.text = "";
+                Char2speech.text = "";
         }
 
         else if (primeInt ==8){
                  Char1name.text = "";
                  Char1speech.text = "";
-                 Char2name.text = "You";
-                 Char2speech.text = "Why do you think I know anything?";
+                 Char2name.text = "???";
+                 Char2speech.text = "Watchu lookin’ at, aintcha got nythin better t do??";
          }
          else if (primeInt ==9){
                   Char1name.text = "";
-                  Char1speech.text = "";
-                  Char2name.text = "You";
-                  Char2speech.text = "Why do you think I know anything?";
+                  Char1speech.text = "The smell of alcohol permates from his breath";
+                  Char2name.text = "";
+                  Char2speech.text = "";
           }
+        else if (primeInt == 10)
+        {
+            Char1name.text = "Hunter";
+            Char1speech.text = "Why exactly were you scavenging through a bush?";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 11)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Drunkard";
+            Char2speech.text = "Whatsit to ya";
+        }
+        else if (primeInt == 12)
+        {
+            Char1name.text = "Hunter";
+            Char1speech.text = "Fair point.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 13)
+        {
+            Char1name.text = "Hunter";
+            Char1speech.text = "Need help with anything?";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 14)
+        {
+            Char1name.text = "";
+            Char1speech.text = "He hesitates before begrudgingly nodding";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 15)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Drunkard";
+            Char2speech.text = "Lost m bottle, lookin for a new one";
+        }
+        else if (primeInt == 16)
+        {
+            Char1name.text = "Hunter";
+            Char1speech.text = "Why don’t you just go back inside to get a glass of wine?";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 17)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Drunkard";
+            Char2speech.text = "Think ‘m crazy?? I ain’t goin nowhere ";
+        }
+        else if (primeInt == 18)
+        {
+            Char1name.text = "Hunter";
+            Char1speech.text = "Why’s that? It's a party after all.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 19)
+        {
+            Char1name.text = "";
+            Char1speech.text = "He gives you a starn look";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
 
-       else if (primeInt == 10){
-                Char1name.text = "Jeda";
-                Char1speech.text = "Do not play the stupid. You will take me to him.";
-                Char2name.text = "";
-                Char2speech.text = "";
+        else if (primeInt == 20){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Drunkard";
+                Char2speech.text = "You gotta death wish?";
                 // Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -134,6 +205,7 @@ public void talking(){         // main story function. Players hit next to progr
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene1Button.SetActive(true);
+                NextScene2Button.SetActive(true);
         }
 
        else if (primeInt == 200){
@@ -149,6 +221,7 @@ public void talking(){         // main story function. Players hit next to progr
                 Char2speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
                 nextButton.SetActive(false);
                 allowSpace = false;
+                NextScene1Button.SetActive(true);
                 NextScene2Button.SetActive(true);
         }
      }
@@ -178,9 +251,9 @@ public void talking(){         // main story function. Players hit next to progr
         }
 
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene2a");
+               SceneManager.LoadScene("Scene4a");
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("Scene2b");
+                SceneManager.LoadScene("Scene4a");
         }
 }

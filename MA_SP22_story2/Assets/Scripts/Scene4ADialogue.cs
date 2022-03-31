@@ -180,9 +180,9 @@ public void talking(){         // main story function. Players hit next to progr
         }
 
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene3A");
+               SceneManager.LoadScene("Scene3B");
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("Scene3A");
+                SceneManager.LoadScene("Scene3B");
         }
 }
