@@ -112,7 +112,7 @@ public void talking(){         // main story function. Players hit next to progr
          }
          else if (primeInt ==9){
                   Char1name.text = "";
-                  Char1speech.text = "The man is cut off by a loud ruccus coming from the ballroom";
+                  Char1speech.text = "The man is cut off by a loud ruckus coming from the ballroom";
                   Char2name.text = "";
                   Char2speech.text = "";
           }
